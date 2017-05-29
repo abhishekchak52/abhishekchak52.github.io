@@ -1,0 +1,25 @@
+{
+  "name": "deadbeatfour.github.io",
+  "version": "1.0.0",
+  "description": "npm dependencies to get the site up and running",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadbeatfour/deadbeatfour.github.io.git"
+  },
+  "author": "Abhishek Chakraborty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deadbeatfour/deadbeatfour.github.io/issues"
+  },
+  "homepage": "https://github.com/deadbeatfour/deadbeatfour.github.io#readme",
+  "dependencies": {
+    "bulma": "^0.4.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
