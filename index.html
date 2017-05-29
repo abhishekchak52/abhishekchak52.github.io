@@ -2,7 +2,26 @@
 title: Home
 layout: home
 ---
-<p>
-Hello, world!
-I'm Abhishek
-</p>
+
+
+<div class="hello">Hello, world!
+	I'm Abhishek</div>
+<div class="description">{{ site.description }}</div>
+<div class="contact">
+	<div class="email"><a href="mailto:{{site.email}}">{{site.email}}</a></div>
+</div>
+<div class="image"><img src="{{ site.baseurl }}{{ site.staticfiles }}/img/face.jpg" alt="Hello!"/></div>
+<div class="tldr">
+	<div class="heading">tl;dr</div>
+	<ul>
+		<li>
+			<div>exploring physics with computer simulation</div>
+		</li>
+		<li>
+			<div>minimalistic graphic design</div>
+		</li>
+		<li>
+			<div>web stuff, python, arduino + more</div>
+		</li>
+	</ul>
+</div>
