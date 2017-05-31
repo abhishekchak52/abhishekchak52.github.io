@@ -1,11 +1,14 @@
 <!doctype html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ site.staticfiles }}/css/main.css">
 	<title>{{ site.title }}</title>
 </head>
 <body>
-{% include header.html %}
-{{ content }}
+<div class="content">
+	{% include header.html %}
+	{{ content }}
+</div>
 
 </body>
 </html>
