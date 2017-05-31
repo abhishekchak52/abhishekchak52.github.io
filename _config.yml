@@ -19,8 +19,8 @@ description: > # this means to ignore newlines until "baseurl:"
   A physics major who loves making beautiful things with 
   computers and code.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-staticfiles:  "/assets"
+url: #"https://deadbeatfour.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+staticfiles:  "/static"
 github_username:  deadbeatfour
 
 # Build settings
@@ -28,6 +28,8 @@ markdown: kramdown
 
 gems:
   - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+exclude: ["assets",
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules"]
