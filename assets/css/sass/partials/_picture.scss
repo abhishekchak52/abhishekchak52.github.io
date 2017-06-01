@@ -1,0 +1,7 @@
+@mixin round_pic($radius) {
+    width: $radius;
+    height: $radius;
+    border-radius:$radius;
+}
+
+

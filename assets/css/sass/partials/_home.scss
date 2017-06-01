@@ -1,0 +1,89 @@
+.name,
+.contact{
+	display: flex;
+	flex-direction: column;
+}
+
+.name{
+	font-family: Montserrat;
+	font-size: 10vw;
+	text-align: center;
+	
+}
+
+.heading{
+	font-family: Montserrat;
+	font-size: 8vw;
+}
+
+.email{
+	font-family: Bitter;
+	font-size:3vw;
+	vertical-align: middle;
+}
+
+.image{
+	margin: auto;
+
+}
+.main{
+	display: flex;
+	flex-direction: column;
+}
+.description,
+.contact,
+.tldr{
+	font-family: Rubik;
+}
+
+.contact{ 
+	font-size: 5.5vw;
+	margin-bottom:5vw;
+	
+}
+.tldr{
+	font-size: 3.5vw;
+}
+.tldr ul{
+	padding-left:5vw;
+}
+.picture{
+	@include round_pic(200px);
+}
+	
+.description{
+	text-align: center;
+	font-size: 4.5vw;
+	margin-top: 2vw;
+	margin-bottom: 3vw;
+}
+
+@media all and (min-width: $breakpoint-mobile){
+
+	.bio			{order:1;width:50%;}
+	.name {
+		margin-bottom: 2vw;
+		text-align: left;
+		font-size: 4vw;
+	}
+	.image			{order:4;}
+	
+	.picture {
+		@include round_pic(25vw);
+
+	}
+	.description	{order:2;margin-bottom: 2vw;font-size:1.9vw;text-align:left;}
+	.contact		{order:3;margin-bottom: 0.5vw;font-size:2.5vw;}
+	.email {
+		font-size: 1.5vw;
+		vertical-align: top;
+	}
+	.tldr			{order:5;font-size:1.8vw;}
+	.main{
+		flex-flow: row wrap;
+	}
+	.heading{
+		font-size: 2.5vw;
+	}
+}
+

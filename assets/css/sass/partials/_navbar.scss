@@ -1,0 +1,55 @@
+// top nav bar
+
+$colormap: (
+ 	about: #000,
+	code: #1982c4,
+	design: #6a4c93,
+	physics: #ff595e, 
+);
+
+@each $color,$value in $colormap {
+  ##{$color} {
+    color: $value;
+  }
+}
+
+.nav_link {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.5rem;
+}
+.menu-toggle{
+	display: flex;
+	justify-content: flex-end;
+ }
+ .toggle-button{
+ 	height: 10vw;
+ 	width: 10vw;
+ 	margin-top: 3vw;
+ }
+.nav{
+	justify-content:center;
+	display:flex;
+	flex-direction: column;
+	margin-bottom: 7vw;
+}
+.pulldown{
+		
+	}
+
+
+@media all and(min-width: $breakpoint-mobile){
+	.menu-toggle{display: none;}
+	
+	.nav{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+		align-items: strech;
+		margin-bottom: 4vw;
+	}
+	.pulldown{
+		display: block;
+	}
+}

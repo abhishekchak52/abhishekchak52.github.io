@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter:700|Montserrat:800|Rubik:500");
-* {
-  border: 0.25px solid black; }
-
 a {
   text-decoration: none;
   color: black; }
@@ -36,10 +33,19 @@ a {
   font-size: 2.5rem; }
 
 .menu-toggle {
-  text-align: right;
-  display: block;
-  font-family: Montserrat;
-  font-size: 5vw; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.toggle-button {
+  height: 10vw;
+  width: 10vw;
+  margin-top: 3vw; }
 
 .nav {
   -webkit-box-pack: center;
@@ -56,9 +62,6 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 7vw; }
-
-.hidden {
-  display: none; }
 
 @media all and (min-width: 800px) {
   .menu-toggle {
@@ -81,7 +84,9 @@ a {
     -webkit-align-items: strech;
         -ms-flex-align: strech;
             align-items: strech;
-    margin-bottom: 4vw; } }
+    margin-bottom: 4vw; }
+  .pulldown {
+    display: block; } }
 
 .name,
 .contact {
@@ -121,8 +126,7 @@ a {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column;
-  color: black; }
+          flex-direction: column; }
 
 .description,
 .contact,
