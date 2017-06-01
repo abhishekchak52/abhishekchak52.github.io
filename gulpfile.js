@@ -3,8 +3,9 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	cp = require('child_process'),
 	util = require('gulp-util'),
-	browsersync = require('browser-sync').create(),
-	plumber = require('gulp-plumber');
+	browserSync = require('browser-sync'),
+	plumber = require('gulp-plumber'),
+	prefix = require('gulp-autoprefixer');
 
 var paths = {
 	sass: './assets/css/sass/**/*.scss',
@@ -15,53 +16,68 @@ var paths = {
 }
 
 
-gulp.task('serve',function(){
-	// browsersync.init({
-	// 	files: [paths.siteRoot + '/**'],
-	// 	port: 4000,
-	// 	server: {
-	// 		baseDir: paths.siteRoot
-	// 	}
-	// });
-	gulp.watch(paths.sass,['styles']);
-	gulp.watch(paths.imgIn,['images']);
-	// gulp.watch('.',['jekyll']);
+var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+var messages = {
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+};
 
+
+gulp.task('jekyll-build',function (done) {
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn( jekyll , ['build','--incremental'], {stdio: 'inherit'})
+        .on('close', done);
+});
+
+gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+    browserSync.reload({stream: true});
+});
+
+gulp.task('browser-sync', ['sass', 'js', 'images', 'jekyll-build'], function() {
+    browserSync({
+    	files: paths.siteRoot + '/**',
+    	port: 4000,
+        server: {
+            baseDir: '_site'
+        }
+    });
 });
 
 
-gulp.task('styles', function(){
-	return gulp.src(paths.sass)
-	.pipe(plumber())
-	.pipe(sass({includePaths: require('node-neat').includePaths}))
-	.pipe(gulp.dest(paths.css))
-	.pipe(browsersync.reload({stream: true}));
-
+gulp.task('sass', function () {
+    return gulp.src(paths.sass)
+        .pipe(sass({
+            // includePaths: ['scss'],
+            onError: browserSync.notify
+        }))
+        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(gulp.dest('_site/static/css'))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest(paths.css));
 });
 
 gulp.task('images',function(){
 	return gulp.src(paths.imgIn)
 		.pipe(imagemin())
-		.pipe(gulp.dest(paths.imgOut))
-		.pipe(browsersync.reload({stream: true}));
+		.pipe(gulp.dest('_site/static/img'))
+		.pipe(browserSync.reload({stream: true}))
+		.pipe(gulp.dest(paths.imgOut));
 });
 
 
 
-gulp.task('jekyll', function(){
-	return cp.spawn('jekyll',['serve',
-							'--watch',
-							'--incremental',
-							]);
-	var jekyllLogger = function(buffer){
-		buffer.toString()
-			  .split(/\n/)
-			  .forEach(function(message){util.log('jekyll: ' + message)});
-	jekyll.stdout.on('data',jekyllLogger);
-	jekyll.stderr.on('data',jekyllLogger);
-	};
+
+gulp.task('watch', function () {
+    gulp.watch('assets/css/sass/**/*.scss', ['sass']);
+    gulp.watch(['*.html', '_layouts/*', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch('assets/js/*.js', ['js']);
+});
+
+gulp.task('js',function(){
+	gulp.src('assets/js/*.js')
+	.pipe(gulp.dest('_site/static/js'))
+	.pipe(browserSync.reload({stream: true}))
+	.pipe(gulp.dest('static/js'));
 });
 
 
-
-gulp.task('default',['images','styles','jekyll','serve']);
+gulp.task('default',['browser-sync','watch']);
