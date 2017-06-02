@@ -3,6 +3,19 @@
 	display: flex;
 	flex-direction: column;
 }
+.contact{ 
+	font-size: 6vw;
+	margin-top:8vw;
+	margin-bottom:5vw;
+	
+}
+
+.email{
+	font-family: 'Bitter', serif;
+	font-size:4vw;
+	vertical-align: top;
+}
+
 
 .name{
 	font-family: 'Montserrat', sans-serif;
@@ -16,11 +29,6 @@
 	font-size: 8vw;
 }
 
-.email{
-	font-family: 'Bitter', serif;
-	font-size:4vw;
-	vertical-align: top;
-}
 
 .image{
 	margin: auto;
@@ -38,12 +46,7 @@
 	font-size: 3.5vw;
 }
 
-.contact{ 
-	font-size: 6vw;
-	margin-top:8vw;
-	margin-bottom:5vw;
-	
-}
+
 .tldr ul{
 	padding-left:5vw;
 }

@@ -139,6 +139,16 @@ body {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.contact {
+  font-size: 6vw;
+  margin-top: 8vw;
+  margin-bottom: 5vw; }
+
+.email {
+  font-family: 'Bitter', serif;
+  font-size: 4vw;
+  vertical-align: top; }
+
 .name {
   font-family: 'Montserrat', sans-serif;
   font-size: 10vw;
@@ -147,11 +157,6 @@ body {
 .heading {
   font-family: 'Montserrat', sans-serif;
   font-size: 8vw; }
-
-.email {
-  font-family: 'Bitter', serif;
-  font-size: 4vw;
-  vertical-align: top; }
 
 .image {
   margin: auto; }
@@ -173,11 +178,6 @@ body {
 .tldr {
   font-family: 'Rubik', sans-serif;
   font-size: 3.5vw; }
-
-.contact {
-  font-size: 6vw;
-  margin-top: 8vw;
-  margin-bottom: 5vw; }
 
 .tldr ul {
   padding-left: 5vw; }
@@ -253,3 +253,74 @@ body {
     margin-top: 1vw; }
   .heading {
     font-size: 2.5vw; } }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 30vw;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.arrow {
+  text-align: center; }
+
+.footer-contact,
+.top {
+  margin: auto 5vw auto 5vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Rubik', sans-serif;
+  font-size: 4vw; }
+
+.footer-email {
+  color: white;
+  font-family: 'Bitter', serif;
+  font-size: 3vw; }
+
+@media all and (min-width: 800px) {
+  .footer {
+    height: 8vw; }
+  .footer-contact {
+    font-size: 1.5vw; }
+  .top {
+    font-size: 1vw; }
+  .footer-email {
+    font-size: 1vw; }
+  .footer-contact {
+    margin-top: auto;
+    margin-bottom: auto; } }
+
+.path {
+  font-family: 'Rubik', sans-serif;
+  font-size: 5vw;
+  margin: 1vw auto 2vw auto; }
+
+@media all and (min-width: 800px) {
+  .path {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vw;
+    margin: 1vw auto 1vw auto; } }

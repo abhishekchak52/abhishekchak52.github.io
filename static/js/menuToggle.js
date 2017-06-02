@@ -20,5 +20,8 @@ $(window).on('resize',function(){
 	
 });
 $('.toggle-button').on('click',function(){
-		$('.nav').slideToggle(300);
+		$('.nav').slideToggle({
+			duration: 300,
+			easing: 'swing'
+		});
 });
