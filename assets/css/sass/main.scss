@@ -23,6 +23,10 @@ a{
 		color: black;
 	}
 
+body{
+	margin: 0 auto;
+}
+
 
 @media all and (min-width: 800px){
 	.content{
@@ -32,7 +36,7 @@ a{
 	}
 }
 
-@import url('https://fonts.googleapis.com/css?family=Bitter:700|Montserrat:800|Rubik:500');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400|Rubik:500|Montserrat:700');
 @import "partials/navbar";
 @import "partials/picture";
 @import "partials/home";

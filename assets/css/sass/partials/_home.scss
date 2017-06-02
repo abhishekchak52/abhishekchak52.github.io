@@ -5,21 +5,21 @@
 }
 
 .name{
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 10vw;
 	text-align: center;
 	
 }
 
 .heading{
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 8vw;
 }
 
 .email{
-	font-family: Bitter;
-	font-size:3vw;
-	vertical-align: middle;
+	font-family: 'Bitter', serif;
+	font-size:4vw;
+	vertical-align: top;
 }
 
 .image{
@@ -27,22 +27,22 @@
 
 }
 .main{
+	margin-top:8vw;
 	display: flex;
 	flex-direction: column;
 }
 .description,
 .contact,
 .tldr{
-	font-family: Rubik;
+	font-family: 'Rubik', sans-serif;
+	font-size: 3.5vw;
 }
 
 .contact{ 
-	font-size: 5.5vw;
+	font-size: 6vw;
+	margin-top:8vw;
 	margin-bottom:5vw;
 	
-}
-.tldr{
-	font-size: 3.5vw;
 }
 .tldr ul{
 	padding-left:5vw;
@@ -60,27 +60,48 @@
 
 @media all and (min-width: $breakpoint-mobile){
 
-	.bio			{order:1;width:50%;}
-	.name {
+	.bio			{
+		order:1;
+		width:50%;
 		margin-bottom: 2vw;
+	}
+	.name {
+		margin-bottom: 1vw;
 		text-align: left;
-		font-size: 4vw;
+		font-size: 3vw;
 	}
 	.image			{order:4;}
 	
 	.picture {
-		@include round_pic(25vw);
+		@include round_pic(22vw);
 
 	}
-	.description	{order:2;margin-bottom: 2vw;font-size:1.9vw;text-align:left;}
-	.contact		{order:3;margin-bottom: 0.5vw;font-size:2.5vw;}
+	.description	{
+		order:2;
+		margin-bottom: 4vw;
+		margin-top: 1vw;
+
+
+		font-size:1.5vw;
+		text-align:left;}
+	.contact		{
+		order:3;
+		margin-bottom: 0.5vw;
+		font-size:2.5vw;
+		margin-top: 0vw;
+	}
 	.email {
 		font-size: 1.5vw;
 		vertical-align: top;
 	}
-	.tldr			{order:5;font-size:1.8vw;}
+	.tldr			{order:5;font-size:1.5vw;}
+	.tldr ul{
+		margin-top: 1vw;
+	}
 	.main{
 		flex-flow: row wrap;
+		margin-top:1vw;
+
 	}
 	.heading{
 		font-size: 2.5vw;

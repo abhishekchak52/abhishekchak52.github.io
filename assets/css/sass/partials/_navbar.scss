@@ -8,24 +8,31 @@ $colormap: (
 );
 
 @each $color,$value in $colormap {
-  ##{$color} {
-    color: $value;
-  }
-}
+	 	 ##{$color} {
+	 	color: white;
+	    background-color: $value;
+	  	}
+	}
+
 
 .nav_link {
   text-align: center;
-  font-family: Montserrat;
-  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
 }
 .menu-toggle{
 	display: flex;
 	justify-content: flex-end;
- }
+}
  .toggle-button{
  	height: 10vw;
  	width: 10vw;
- 	margin-top: 3vw;
+ 	margin-top: auto;
+ 	margin-bottom: auto;
+ 	padding: 3vw;
+
  }
 .nav{
 	justify-content:center;
@@ -33,8 +40,9 @@ $colormap: (
 	flex-direction: column;
 	margin-bottom: 7vw;
 }
-.pulldown{
-		
+.header{
+	width:100%;
+	position: relative;		
 	}
 
 
@@ -49,7 +57,24 @@ $colormap: (
 		align-items: strech;
 		margin-bottom: 4vw;
 	}
+
+	.nav_link {
+		font-size: 3.5vw;
+	}
+
 	.pulldown{
 		display: block;
+		width: 80vw;
 	}
+	.header{
+		display: flex;
+		justify-content: center;
+	}
+	@each $color,$value in $colormap {
+	 	 ##{$color} {
+	    color: $value;
+	    background-color: white;
+	  	}
+	}
+
 }

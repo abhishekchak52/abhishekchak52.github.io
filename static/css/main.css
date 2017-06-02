@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bitter:700|Montserrat:800|Rubik:500");
+@import url("https://fonts.googleapis.com/css?family=Bitter:400|Rubik:500|Montserrat:700");
 a {
   text-decoration: none;
   color: black; }
@@ -9,6 +9,9 @@ a {
   margin: auto;
   color: black; }
 
+body {
+  margin: 0 auto; }
+
 @media all and (min-width: 800px) {
   .content {
     max-width: 70vw;
@@ -16,21 +19,27 @@ a {
     margin: auto; } }
 
 #about {
-  color: #000; }
+  color: white;
+  background-color: #000; }
 
 #code {
-  color: #1982c4; }
+  color: white;
+  background-color: #1982c4; }
 
 #design {
-  color: #6a4c93; }
+  color: white;
+  background-color: #6a4c93; }
 
 #physics {
-  color: #ff595e; }
+  color: white;
+  background-color: #ff595e; }
 
 .nav_link {
   text-align: center;
-  font-family: Montserrat;
-  font-size: 2.5rem; }
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw; }
 
 .menu-toggle {
   display: -webkit-box;
@@ -45,7 +54,9 @@ a {
 .toggle-button {
   height: 10vw;
   width: 10vw;
-  margin-top: 3vw; }
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 3vw; }
 
 .nav {
   -webkit-box-pack: center;
@@ -62,6 +73,10 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 7vw; }
+
+.header {
+  width: 100%;
+  position: relative; }
 
 @media all and (min-width: 800px) {
   .menu-toggle {
@@ -85,8 +100,32 @@ a {
         -ms-flex-align: strech;
             align-items: strech;
     margin-bottom: 4vw; }
+  .nav_link {
+    font-size: 3.5vw; }
   .pulldown {
-    display: block; } }
+    display: block;
+    width: 80vw; }
+  .header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #about {
+    color: #000;
+    background-color: white; }
+  #code {
+    color: #1982c4;
+    background-color: white; }
+  #design {
+    color: #6a4c93;
+    background-color: white; }
+  #physics {
+    color: #ff595e;
+    background-color: white; } }
 
 .name,
 .contact {
@@ -101,23 +140,24 @@ a {
           flex-direction: column; }
 
 .name {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 10vw;
   text-align: center; }
 
 .heading {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 8vw; }
 
 .email {
-  font-family: Bitter;
-  font-size: 3vw;
-  vertical-align: middle; }
+  font-family: 'Bitter', serif;
+  font-size: 4vw;
+  vertical-align: top; }
 
 .image {
   margin: auto; }
 
 .main {
+  margin-top: 8vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,14 +171,13 @@ a {
 .description,
 .contact,
 .tldr {
-  font-family: Rubik; }
+  font-family: 'Rubik', sans-serif;
+  font-size: 3.5vw; }
 
 .contact {
-  font-size: 5.5vw;
+  font-size: 6vw;
+  margin-top: 8vw;
   margin-bottom: 5vw; }
-
-.tldr {
-  font-size: 3.5vw; }
 
 .tldr ul {
   padding-left: 5vw; }
@@ -161,28 +200,30 @@ a {
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
-    width: 50%; }
+    width: 50%;
+    margin-bottom: 2vw; }
   .name {
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     text-align: left;
-    font-size: 4vw; }
+    font-size: 3vw; }
   .image {
     -webkit-box-ordinal-group: 5;
     -webkit-order: 4;
         -ms-flex-order: 4;
             order: 4; }
   .picture {
-    width: 25vw;
-    height: 25vw;
-    -webkit-border-radius: 25vw;
-            border-radius: 25vw; }
+    width: 22vw;
+    height: 22vw;
+    -webkit-border-radius: 22vw;
+            border-radius: 22vw; }
   .description {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
-    margin-bottom: 2vw;
-    font-size: 1.9vw;
+    margin-bottom: 4vw;
+    margin-top: 1vw;
+    font-size: 1.5vw;
     text-align: left; }
   .contact {
     -webkit-box-ordinal-group: 4;
@@ -190,7 +231,8 @@ a {
         -ms-flex-order: 3;
             order: 3;
     margin-bottom: 0.5vw;
-    font-size: 2.5vw; }
+    font-size: 2.5vw;
+    margin-top: 0vw; }
   .email {
     font-size: 1.5vw;
     vertical-align: top; }
@@ -199,12 +241,15 @@ a {
     -webkit-order: 5;
         -ms-flex-order: 5;
             order: 5;
-    font-size: 1.8vw; }
+    font-size: 1.5vw; }
+  .tldr ul {
+    margin-top: 1vw; }
   .main {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
-            flex-flow: row wrap; }
+            flex-flow: row wrap;
+    margin-top: 1vw; }
   .heading {
     font-size: 2.5vw; } }

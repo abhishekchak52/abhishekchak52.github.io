@@ -20,5 +20,5 @@ $(window).on('resize',function(){
 	
 });
 $('.toggle-button').on('click',function(){
-		$('.nav').slideToggle("fast");
+		$('.nav').slideToggle(300);
 });
