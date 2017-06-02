@@ -1,1 +1,0 @@
-$(document).ready(function(){"column"==$(".nav").css("flex-direction")?$(".nav").hide():"row"==$(".nav").css("flex-direction")&&$(".nav").show()}),$(window).on("resize",function(){"row"==$(".nav").css("flex-direction")&&$(".nav").show()}),$(".toggle-button").on("click",function(){$(".nav").slideToggle({duration:300,easing:"swing"})});

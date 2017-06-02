@@ -81,6 +81,7 @@ gulp.task('js',function(){
 	gulp.src('assets/js/*.js')
 	.pipe(gulp.dest('_site/static/js'))
 	.pipe(browserSync.reload({stream: true}))
+    .pipe(concat('main.js'))
     .pipe(uglify())
 	.pipe(gulp.dest('static/js'));
 });
