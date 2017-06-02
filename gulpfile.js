@@ -5,7 +5,10 @@ var gulp = require('gulp'),
 	util = require('gulp-util'),
 	browserSync = require('browser-sync'),
 	plumber = require('gulp-plumber'),
-	prefix = require('gulp-autoprefixer');
+	prefix = require('gulp-autoprefixer'),
+    cleancss = require('gulp-clean-css'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify');
 
 var paths = {
 	sass: './assets/css/sass/**/*.scss',
@@ -50,6 +53,8 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(concat('main.css'))
+        .pipe(cleancss())    
         .pipe(gulp.dest('_site/static/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest(paths.css));
@@ -76,6 +81,7 @@ gulp.task('js',function(){
 	gulp.src('assets/js/*.js')
 	.pipe(gulp.dest('_site/static/js'))
 	.pipe(browserSync.reload({stream: true}))
+    .pipe(uglify())
 	.pipe(gulp.dest('static/js'));
 });
 
