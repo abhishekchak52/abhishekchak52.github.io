@@ -28,8 +28,8 @@ $colormap: (
 	justify-content: flex-end;
 }
  .toggle-button{
- 	height: 10vw;
- 	width: 10vw;
+ 	height: 8vw;
+ 	width: 8vw;
  	margin-top: auto;
  	margin-bottom: auto;
  	padding: 3vw;
@@ -72,9 +72,12 @@ $colormap: (
 		justify-content: center;
 	}
 	@each $color,$value in $colormap {
-	 	 ##{$color} a {
-	    color: $value;
+	 	 ##{$color}  {
 	    background-color: white;
+	    a {
+	    	color: $value;
+	    	}
+	    
 	  	}
 	}
 
