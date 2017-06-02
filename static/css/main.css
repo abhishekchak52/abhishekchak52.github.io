@@ -18,19 +18,19 @@ body {
     display: block;
     margin: auto; } }
 
-#about {
+#about a {
   color: white;
   background-color: #000; }
 
-#code {
+#code a {
   color: white;
   background-color: #1982c4; }
 
-#design {
+#design a {
   color: white;
   background-color: #6a4c93; }
 
-#physics {
+#physics a {
   color: white;
   background-color: #ff595e; }
 
@@ -99,7 +99,7 @@ body {
     -webkit-align-items: strech;
         -ms-flex-align: strech;
             align-items: strech;
-    margin-bottom: 4vw; }
+    margin-bottom: 1vw; }
   .nav_link {
     font-size: 3vw; }
   .pulldown {
@@ -114,16 +114,16 @@ body {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  #about {
+  #about a {
     color: #000;
     background-color: white; }
-  #code {
+  #code a {
     color: #1982c4;
     background-color: white; }
-  #design {
+  #design a {
     color: #6a4c93;
     background-color: white; }
-  #physics {
+  #physics a {
     color: #ff595e;
     background-color: white; } }
 
@@ -250,7 +250,7 @@ body {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin-top: 1vw; }
+    margin-top: 4vw; }
   .heading {
     font-size: 2.5vw; } }
 

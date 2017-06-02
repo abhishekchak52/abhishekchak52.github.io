@@ -8,7 +8,7 @@ $colormap: (
 );
 
 @each $color,$value in $colormap {
-	 	 ##{$color} {
+	 	 ##{$color} a {
 	 	color: white;
 	    background-color: $value;
 	  	}
@@ -55,7 +55,7 @@ $colormap: (
 		justify-content: space-between;
 		
 		align-items: strech;
-		margin-bottom: 4vw;
+		margin-bottom: 1vw;
 	}
 
 	.nav_link {
@@ -71,7 +71,7 @@ $colormap: (
 		justify-content: center;
 	}
 	@each $color,$value in $colormap {
-	 	 ##{$color} {
+	 	 ##{$color} a {
 	    color: $value;
 	    background-color: white;
 	  	}
