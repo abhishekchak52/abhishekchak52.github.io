@@ -1,3 +1,4 @@
+// Toggle the menu
 $(document).ready(function(){
 	if ($('.nav').css('flex-direction')=='column'){
 			$('.nav').hide();
@@ -25,3 +26,5 @@ $('.toggle-button').on('click',function(){
 			easing: 'swing'
 		});
 });
+
+
