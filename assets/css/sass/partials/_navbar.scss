@@ -8,12 +8,13 @@ $colormap: (
 );
 
 @each $color,$value in $colormap {
-	 	 ##{$color} a {
-	 	color: white;
-	    background-color: $value;
+	 	 ##{$color} {
+		    background-color: $value;
+		    a{
+		    color: white;
+			}
 	  	}
 	}
-
 
 .nav_link {
   text-align: center;
