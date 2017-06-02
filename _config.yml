@@ -22,6 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: #"https://deadbeatfour.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 staticfiles:  "/static"
 github_username:  deadbeatfour
+permalink: /:title/
 
 # Build settings
 markdown: kramdown
@@ -32,6 +33,9 @@ highlighter: rouge
 
 gems:
   - jekyll-feed
+
+include: ['_pages']
+
 exclude: ["assets",
           "Gemfile",
           "Gemfile.lock",
