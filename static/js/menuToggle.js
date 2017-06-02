@@ -9,14 +9,14 @@ $(document).ready(function(){
 })
 
 $(window).on('resize',function(){
-	if ($('.nav').css('flex-direction')=='column'){
-			$('.nav').hide();
+	// if ($('.nav').css('flex-direction') =='column'){
+	// 		$('.nav').hide();
 
-	} else if ($('.nav').css('flex-direction')=='row'){
+	// } else
+	if ($('.nav').css('flex-direction')=='row'){
 			$('.nav').show();
 
 	}
-	console.log($('.nav').css('flex-direction'));
 	
 });
 $('.toggle-button').on('click',function(){
