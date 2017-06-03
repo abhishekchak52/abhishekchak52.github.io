@@ -25,6 +25,7 @@ body {
 		.header{
 			font-family: 'Montserrat', sans-serif;
 			font-size: 7vw;
+			line-height: 10.5vw;
 			display: block;
 			text-align: left;
 		}
@@ -106,6 +107,13 @@ body {
 		pre,
 		code{
 			font-size: 1vw;
+		}
+		.description{
+			font-size: 1.8vw;
+			line-height: 2.7vw;
+		}
+		h2{
+			font-size: 2.5vw;
 		}
 		
 	}
