@@ -4,6 +4,7 @@ title: dummy
 category: code
 heading: Dummy Post
 description: This is a dummy post yay
+comments: true
 
 ---
 
