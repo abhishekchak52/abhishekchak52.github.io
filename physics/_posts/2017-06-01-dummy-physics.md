@@ -1,7 +1,7 @@
 ---
 layout: post
-title: dummy
-category: physics-physics
+title: dummy-physics
+category: physics
 heading: Dummy Post
 description: This is a dummy post yay
 comments: true
