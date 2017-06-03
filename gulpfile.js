@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 
 var paths = {
 	sass: './assets/css/sass/**/*.scss',
-	imgIn: './assets/img/*',
+	imgIn: './assets/img/**/*',
 	css: './static/css/',
 	imgOut: './static/img/',
 	siteRoot: "_site"
@@ -73,7 +73,7 @@ gulp.task('images',function(){
 
 gulp.task('watch', function () {
     gulp.watch('assets/css/sass/**/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*', '_posts/**/*'], ['jekyll-rebuild']);
     gulp.watch('assets/js/*.js', ['js']);
 });
 

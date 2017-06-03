@@ -3,13 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ site.staticfiles }}/css/main.css">
-	<script
-		src="https://code.jquery.com/jquery-3.2.1.min.js"
-		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-		crossorigin="anonymous">
-	</script>
-	<script src="{{ site.baseurl }}{{ site.staticfiles }}/js/main.js" type="text/javascript" charset="utf-8" async defer>
-	</script>
+	
 	
 	<title>{{ site.title }}</title>
 </head>
@@ -18,5 +12,19 @@
 
 {{ content }}
 
+
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">
+	</script>
+	<script src="{{ site.baseurl }}{{ site.staticfiles }}/js/main.js" type="text/javascript" charset="utf-8" async defer>
+	</script>
+	<script type="text/x-mathjax-config">
+  		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript" async
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=defa	ult">
+	</script>
 </body>
 </html>

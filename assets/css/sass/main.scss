@@ -9,36 +9,10 @@ $breakpoint-mobile: 800px;
 	}
 }
 
-
-a{
-	text-decoration: none;
-	color: black;
-}
-
-
-.content{
-		max-width: 80vw;
-		display: block;
-		margin: auto;
-		color: black;
-	}
-
-body{
-	margin: 0 auto;
-}
-
-
-@media all and (min-width: 800px){
-	.content{
-		max-width: 70vw;
-		display: block;
-		margin: auto;
-	}
-}
-
-@import url('https://fonts.googleapis.com/css?family=Bitter:400|Rubik:500|Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400|Rubik:300,500|Montserrat:700');
 @import "partials/navbar";
 @import "partials/picture";
 @import "partials/home";
 @import "partials/footer";
 @import "partials/path";
+@import "partials/posts";
