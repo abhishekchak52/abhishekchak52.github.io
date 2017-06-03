@@ -16,13 +16,23 @@ body {
 
 
 .content{
-		max-width: 80vw;
+		width: 80vw;
 		margin: auto;
 		color: black;
 		overflow-wrap: break-word;
 		flex: 1 0 auto;
 
+		.header{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 7vw;
+			display: block;
+			text-align: left;
+		}
+
 		p{
+			font-size: 1rem;
+			line-height: 1.5rem;
+			text-align: justify;
 			
 			img{
 				display: block;
@@ -79,6 +89,10 @@ body {
 		width: 70vw;
 		margin: auto;
 		flex: 1 0 auto;
+
+		.header{
+			font-size: 4vw;
+		}
 		
 		p{	
 
