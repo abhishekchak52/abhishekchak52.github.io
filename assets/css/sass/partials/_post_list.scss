@@ -1,0 +1,54 @@
+.post_list{
+	display: flex;
+	flex-direction: column
+
+
+}
+
+.post_card{
+	display: flex;
+	flex-direction: column;
+	padding: 4vw;
+	margin: 1vw auto;
+}
+.card_title{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 6vw;
+
+}
+.card_desc{
+	font-family: 'Rubik', sans-serif;
+	font-size: 4vw;
+	margin: 1vw auto;
+
+}
+.card_date{
+	font-family: 'Rubik', sans-serif;
+	font-size: 4vw;
+	text-align: right;
+	font-weight: 500;
+}
+
+@media all and (min-width: $breakpoint-mobile){
+	.post_list{
+		
+
+	}
+
+	.post_card{
+		margin: 0.5vw auto;
+
+	}
+	.card_title{
+		font-size:3vw;
+
+	}
+	.card_desc{
+		font-size: 2vw;
+		
+	}
+	.card_date{
+		font-size: 1.5vw;
+
+	}
+}
