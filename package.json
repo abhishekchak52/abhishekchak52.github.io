@@ -16,11 +16,7 @@
     "url": "https://github.com/deadbeatfour/deadbeatfour.github.io/issues"
   },
   "homepage": "https://github.com/deadbeatfour/deadbeatfour.github.io#readme",
-  "dependencies": {
-    "bulma": "^0.4.2"
-  },
   "devDependencies": {
-    "bourbon-neat": "^2.0.0",
     "browser-sync": "^2.18.12",
     "child-process": "^1.0.2",
     "gulp": "^3.9.1",
@@ -28,10 +24,8 @@
     "gulp-clean-css": "^3.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^3.3.0",
-    "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "node-neat": "^2.0.0-beta.0"
+    "gulp-uglify": "^3.0.0"
   }
 }
