@@ -1,5 +1,6 @@
 $('.top').on('click',function(){
-	$('.top').animate({
+
+	$('html,body').animate({
 		scrollTop: 0
 	});
 });
