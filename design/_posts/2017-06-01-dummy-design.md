@@ -1,6 +1,6 @@
 ---
 layout: post
-title: dummy
+title: dummy-design
 category: design
 heading: Dummy Post
 description: This is a dummy post yay

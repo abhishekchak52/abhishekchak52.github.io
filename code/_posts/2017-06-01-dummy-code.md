@@ -1,6 +1,6 @@
 ---
 layout: post
-title: dummy
+title: dummy-code
 category: code
 heading: Dummy Post
 description: This is a dummy post yay
