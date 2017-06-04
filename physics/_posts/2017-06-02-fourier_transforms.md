@@ -6,7 +6,7 @@ heading: Implementing Fourier Transforms
 description: A look at how to implement Fourier Transforms on a computer.
 comments: true
 
-og-image-url: "{{ site.baseurl }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/output_7_1.png"
+og-image-url: "output_7_1.png"
 
 
 ---
