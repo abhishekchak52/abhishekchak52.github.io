@@ -6,7 +6,7 @@
 
 	
 	
-	<title>{{ site.title }}</title>
+	<title>{% if page.heading %}{{ page.heading }}{% elsif page.category %}{{ page.category | capitalize }}{% endif%} | {{ site.title }}</title>
 </head>
 <body>
 	
