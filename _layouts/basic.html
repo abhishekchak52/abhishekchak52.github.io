@@ -3,10 +3,9 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	{% if page.og-image-url %}
-	<meta property="og:image" content="{{ site.url }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/{{ page.og-image-url }}" />
+	<meta property="og:image:url" content="{{ site.url }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/{{ page.og-image-url }}" />
 	<meta property="og:title" content="{{ page.heading }}"/>	
 	<meta property="og:description" content="{{page.description}}" />
-	<meta property="og:type" content="article" />
 	<meta property="og:article:author" content="{{ site.title }}" />
 	<meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}" />
 
