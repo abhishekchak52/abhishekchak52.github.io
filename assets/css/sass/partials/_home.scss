@@ -49,7 +49,7 @@
 	.bio{
 		order:1;
 		width:60%;
-		margin-bottom: 2vw;
+		margin: auto auto;
 	}
 	.name {
 		margin-bottom: 1vw;
@@ -58,10 +58,12 @@
 	}
 	.image{
 		order:2;
+		margin: auto auto;
 	}
 	
 	.picture {
-		@include round_pic(25vw);
+
+		@include round_pic(22vw);
 
 	}
 	.description	{
@@ -86,7 +88,7 @@
 	}
 	.main{
 		flex-flow: row wrap;
-		margin-top:4vw;
+		margin-top:1vw;
 
 	}
 	.heading{
