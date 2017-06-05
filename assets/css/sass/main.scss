@@ -1,4 +1,5 @@
 $debug: false;
+// $debug: true;
 $breakpoint-mobile: 800px;
 
 
@@ -9,7 +10,7 @@ $breakpoint-mobile: 800px;
 	}
 }
 
-@import url('https://fonts.googleapis.com/css?family=Bitter:400|Rubik:300,500|Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:500|Rubik:300,500|Montserrat:700');
 @import "partials/navbar";
 @import "partials/picture";
 @import "partials/home";

@@ -3,12 +3,20 @@
 		<span>
 			Contact me at
 		</span>
-		<span>
-			<a class="footer-email" href="mailto:{{site.email}}">{{ site.email }}</a>
-		</span>
-	</div>
-		<div class="top">
-			<span class="arrow">^<img src=""/></span>
-			<span class="text">Back to top</span>
+		<div class="contact-options">
+			<span>
+				<a href="mailto:{{site.email}}" class="option">{{ site.email }}</a>
+			</span>
+			<span>
+				<a href="http://github.com/{{ site.github_username }}" class="option">github</a>
+			</span>
+			<span>
+				<a href="" class="option">resume</a>
+			</span>
 		</div>
+	</div>
+	<div class="top">
+		<span class="arrow">^</span>
+		<span class="text">Back to top</span>
+	</div>
 </div>
