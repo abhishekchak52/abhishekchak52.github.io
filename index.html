@@ -1,12 +1,8 @@
 ---
-title: Home
 category: about
-layout: home
+layout: sections
 ---
 <div class="main">
-	
-
-	
 	<div class="image">
 				<img src="{{ site.baseurl }}{{ site.staticfiles }}/img/face.jpg" alt="Hello!" class="picture" />
 	</div>
@@ -23,31 +19,10 @@ layout: home
 		<div class="description">
 					{{ site.description }}
 		</div>
-		<div class="contact">
-			<span>
-				Contact me at
-			</span>
-			<span class="email">
-				<a href="mailto:{{site.email}}">{{ site.email }}</a>
-			</span>
-				
-			
-		</div>
+			{% include tldr.html %}
+		
 	</div>
-	<div class="tldr">
-		<div class="heading">tl;dr</div>
-		<ul>
-			<li>
-				<div>exploring physics with computer simulation</div>
-			</li>
-			<li>
-				<div>minimalistic graphic design</div>
-			</li>
-			<li>
-				<div>web stuff, python, arduino + more</div>
-			</li>
-		</ul>
-	</div>
+
 </div>
 
 

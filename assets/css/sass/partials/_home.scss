@@ -1,32 +1,15 @@
-.name,
-.contact{
-	display: flex;
-	flex-direction: column;
-}
-.contact{ 
-	font-size: 6vw;
-	margin-top:8vw;
-	margin-bottom:5vw;
-	
-}
-
-.email{
-	font-family: 'Bitter', serif;
-	font-size:4vw;
-	vertical-align: top;
-}
-
-
 .name{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 10vw;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 	
 }
 
 .heading{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 8vw;
+	font-size: 6vw;
 }
 
 
@@ -40,16 +23,16 @@
 	flex-direction: column;
 }
 .description,
-.contact,
 .tldr{
 	font-family: 'Rubik', sans-serif;
-	font-size: 3.5vw;
+	ul{
+		padding-left:5vw;
+		li {
+		font-size: 3.5vw;
+		}
+	}
 }
-
-
-.tldr ul{
-	padding-left:5vw;
-}
+	
 .picture{
 	@include round_pic(200px);
 }
@@ -63,9 +46,9 @@
 
 @media all and (min-width: $breakpoint-mobile){
 
-	.bio			{
+	.bio{
 		order:1;
-		width:50%;
+		width:60%;
 		margin-bottom: 2vw;
 	}
 	.name {
@@ -73,33 +56,33 @@
 		text-align: left;
 		font-size: 3vw;
 	}
-	.image			{order:4;}
+	.image{
+		order:2;
+	}
 	
 	.picture {
-		@include round_pic(22vw);
+		@include round_pic(25vw);
 
 	}
 	.description	{
 		order:2;
-		margin-bottom: 4vw;
+		margin-bottom: 1vw;
 		margin-top: 1vw;
 
 
 		font-size:1.5vw;
-		text-align:left;}
-	.contact		{
-		order:3;
-		margin-bottom: 0.5vw;
-		font-size:2.5vw;
-		margin-top: 0vw;
+		text-align:left;
 	}
-	.email {
-		font-size: 1.5vw;
-		vertical-align: top;
-	}
-	.tldr			{order:5;font-size:1.5vw;}
-	.tldr ul{
+	.tldr{
+		order:4;
+		
+		ul{
 		margin-top: 1vw;
+			li{
+				font-size: 1.5vw;
+			}
+		}
+
 	}
 	.main{
 		flex-flow: row wrap;
