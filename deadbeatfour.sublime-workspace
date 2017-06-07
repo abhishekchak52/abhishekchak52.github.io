@@ -1,0 +1,488 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"colu",
+				"column-count"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"clean",
+				"clean-css"
+			],
+			[
+				"cle",
+				"clean-css"
+			],
+			[
+				"concat",
+				"concat-css"
+			],
+			[
+				"node",
+				"node-sass"
+			],
+			[
+				"foor",
+				"footer-contact"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"un",
+				"underline"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"card",
+				"card_date"
+			],
+			[
+				"fotn",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"footer",
+				"footer-email"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"con",
+				"align-content"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"top",
+				"margin-top"
+			],
+			[
+				"add",
+				"addClass\t( className: String ): jQuery jQuery - Attributes | Manipulation > Class Attribute | CSS"
+			],
+			[
+				"paths",
+				"paths.siteRoot"
+			],
+			[
+				"nav",
+				"nav_link"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"jekyll",
+				"jekyll"
+			],
+			[
+				"brow",
+				"browser-sync"
+			],
+			[
+				"na",
+				"navbar-grid--quarter"
+			],
+			[
+				"jek",
+				"jekyll"
+			],
+			[
+				"jeky",
+				"jekyllLogger"
+			],
+			[
+				"forEac",
+				"forEach\t( callbackfn: Function, thisArg?: any ): Array Array"
+			],
+			[
+				"s",
+				"space-between"
+			],
+			[
+				"fl",
+				"flex"
+			],
+			[
+				"inli",
+				"inline-flex"
+			],
+			[
+				"width",
+				"column-width"
+			],
+			[
+				"base",
+				"baseurl"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"wiki",
+				"wikipedia_api_link"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "mar",
+		"selected_items":
+		[
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			]
+		],
+		"width": 382.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io"
+	],
+	"file_history":
+	[
+		"/C/Users/abhis/Dropbox/Documents/Programming/photon/index.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/photon/assets/scss/main.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/photon/gulpfile.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/gulpfile.js",
+		"/C/Users/abhis/Downloads/palette.scss",
+		"/C/Users/abhis/.jupyter/jupyter_notebook_config.py",
+		"/C/Users/abhis/Dropbox/Documents/Programming/photon/gulpfule.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/photon/package.json",
+		"/C/Users/abhis/Dropbox/Documents/Programming/photon/assets/css/main.css",
+		"/C/Users/abhis/Dropbox/Documents/Programming/photon/package-lock.json",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/text/_posts/the-circle.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/tldr.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/main.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/footer.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_footer.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_posts.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/index.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/contact.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_home.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_tldr.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/post.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code/code.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/text/text.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_navbar.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/header.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts/2017-06-02-fourier_transforms.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/basic.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/social.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_config.yml",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/disqus.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts/fourier_transforms/2017-06-02-fourier_transforms.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts/2017-06-01-dummy-physics.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/design/_posts/2017-06-01-dummy-design.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code/_posts/2017-06-01-dummy-code.md",
+		"/C/Users/abhis/AppData/Local/Temp/Rar$DIa0.580/README.txt",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/post_list.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_post_list.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts/2017-06-01-dummy.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/js/scrollToTop.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/path.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/design/design.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/sections.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/physics.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_pages/design/design.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_pages/code/code.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_pages/physics/_posts/fourier_transforms/2017-06-02-fourier_transforms.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_pages/physics/physics.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_pages/physics/_posts/fourier_transforms/fourier_transforms.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/package.json",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/js/menuToggle.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/static/js/main.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/design.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/about.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_path.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/home.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/.gitignore",
+		"/C/Users/abhis/Desktop/swe_wavepacket/swe_wavepacket.md",
+		"/C/Users/abhis/AppData/Roaming/Sublime Text 3/Packages/User/MarkdownPreview.sublime-settings",
+		"/C/Users/abhis/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/C/Users/abhis/Desktop/GitHubLog.txt",
+		"/C/Users/abhis/Desktop/gulpfile.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/hamburgers/hamburgers.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/static/js/jquery-3.2.1.min.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/static/js/menuToggle.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_picture.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/static/css/main.css",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_site/static/css/main.css",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_layout.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/layouts/_layout.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/navbar.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/main.css",
+		"/C/Users/abhis/Downloads/Adobe.InDesign.CC.2017.v12.0.WINX64/Read me.txt",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_assets/sass/main.scss",
+		"/C/Users/abhis/AppData/Roaming/Sublime Text 3/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_assets/localhost_config.yml",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/node_modules/bulma/README.md",
+		"/C/Users/abhis/AppData/Roaming/Sublime Text 3/Packages/Jekyll/README.md",
+		"/C/Users/abhis/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/index.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/.gitignore",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/LICENSE",
+		"/C/Users/abhis/Desktop/rect.py",
+		"/C/Users/abhis/AppData/Roaming/Sublime Text 3/Packages/E-Mail/README.rst",
+		"/C/Users/abhis/Desktop/scraper.py",
+		"/C/Users/abhis/Dropbox/Documents/Societies/ESoc/EVM/ELECTION/president/president.ino",
+		"/C/Users/abhis/Dropbox/Documents/Societies/ESoc/EVM/store_candidates/store_candidates.ino",
+		"/D/Movies/La.La.Land.2016.DVDScr.XVID.AC3.HQ.Hive-CM8.nfo",
+		"/C/windows-version.txt",
+		"/C/Users/abhis/AppData/Local/Temp/Rar$DIb0.362/ReadMe.txt",
+		"/C/Users/abhis/Dropbox/Documents/Programming/Physics/SWE_wavepacket/Time_Evolution.py",
+		"/C/Users/abhis/Documents/notebooks/README.md",
+		"/C/Users/abhis/AppData/Local/Temp/Rar$DIa0.698/README.txt",
+		"/C/Users/abhis/Dropbox/Documents/Societies/Kooler Talk/May 2017/Articles/whos_your_doggy.txt",
+		"/C/Users/abhis/Dropbox/Documents/Societies/Kooler Talk/May 2017/Articles/whos_your_doggy",
+		"/C/Users/abhis/Dropbox/Documents/Societies/Kooler Talk/Exclusive/Articles/Sheila",
+		"/C/Users/abhis/Dropbox/Documents/Societies/Kooler Talk/Exclusive/Articles/Hello.txt",
+		"/C/Users/abhis/Dropbox/Documents/Societies/Kooler Talk/Exclusive/ojaswink.txt",
+		"/C/Users/abhis/Dropbox/Documents/Societies/Kooler Talk/Exclusive/Hello.txt",
+		"/C/Users/abhis/Dropbox/Documents/Societies/Kooler Talk/Exclusive/ojaswink",
+		"/C/Users/abhis/Dropbox/Documents/Societies/Kooler Talk/Exclusive/Hello. ",
+		"/D/Software/Adobe/InDesign.CC.2015/Adobe.InDesign.CC.2015.u2.x86-x64.RU-EN/Crack/readme.txt"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<span></span>",
+			":*\"\n",
+			"}}\"",
+			"descriptio",
+			" }",
+			"```",
+			"\n```python",
+			"about",
+			"5vw",
+			"a",
+			"2em",
+			"jekyll",
+			"c",
+			" "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<img src=\"static/img/img.jpg\"/>",
+			"{% endhighlight %}",
+			"{% highlight python %}",
+			"physics",
+			"design",
+			"span",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 62.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "deadbeatfour.sublime-project",
+	"replace":
+	{
+		"height": 114.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
