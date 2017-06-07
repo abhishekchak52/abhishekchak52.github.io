@@ -46,7 +46,7 @@ signal_list = [signal(time) for time in time_list]
 plot(time_list,signal_list)
 {% endhighlight %}
 
-![png]({{ site.baseurl }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/output_7_1.png)
+![png]({{site.staticfiles | prepend: site.baseurl }}/img/posts/{{ page.category }}/{{ page.title }}/output_7_1.png)
 
 
 Now we create the function that will perform the discrete fourier transform.
@@ -69,7 +69,7 @@ g = DFT(signal_list)
 plot(absolute(g))
 {% endhighlight %}
 
-![png]({{ site.baseurl }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/output_12_1.png)
+![png]({{site.staticfiles | prepend: site.baseurl }}/img/posts/{{ page.category }}/{{ page.title }}/output_12_1.png)
 
 
 ### Regenerating the signal
@@ -81,7 +81,7 @@ f = DFT(g,inverse=True)
 plot(time_list,f.real)
 {% endhighlight %}
 
-![png]({{ site.baseurl }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/output_15_2.png)
+![png]({{site.staticfiles | prepend: site.baseurl }}/img/posts/{{ page.category }}/{{ page.title }}/output_15_2.png)
 
 
 This verifies that the DFT we obtained was correct.
@@ -96,7 +96,7 @@ plot(absolute(g))
 {% endhighlight %}
 
 
-![png]({{ site.baseurl }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/output_19_1.png)
+![png]({{site.staticfiles | prepend: site.baseurl }}/img/posts/{{ page.category }}/{{ page.title }}/output_19_1.png)
 
 
 ### Regenerating the modified signal
@@ -106,7 +106,7 @@ f = DFT(g,inverse=True)
 plot(time_list,f.real)
 {% endhighlight %}
 
-![png]({{ site.baseurl }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/output_21_2.png)
+![png]({{site.staticfiles | prepend: site.baseurl }}/img/posts/{{ page.category }}/{{ page.title }}/output_21_2.png)
 
 
 Notice that the amplitude of the regenerated signal is a lot less than the original signal. This is attributed to the fact that when you take away the contributions due to certian frequencies, a lesser number of harmonics  generate the new signal and this signal has a lower amplitude.
@@ -119,7 +119,7 @@ Discrete Fourier Transforms are great but they are also horribly slow, with a ti
 plot(time_list,signal_list)
 {% endhighlight %}
 
-![png]({{ site.baseurl }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/output_25_1.png)
+![png]({{site.staticfiles | prepend: site.baseurl }}/img/posts/{{ page.category }}/{{ page.title }}/output_25_1.png)
 
 
 We intend to use recursion as our friend in this one. So we'll define a function which implements this recursion. Why we define the function this particular way will be clear if you look at the mathematical treatment for the optimization of the FFT.
@@ -145,7 +145,7 @@ plot(absolute(h))
 {% endhighlight %}
 
 
-![png]({{ site.baseurl }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/output_29_2.png)
+![png]({{site.staticfiles | prepend: site.baseurl }}/img/posts/{{ page.category }}/{{ page.title }}/output_29_2.png)
 
 
 ## Time Comparison
