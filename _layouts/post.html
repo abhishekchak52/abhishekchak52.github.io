@@ -6,8 +6,9 @@ layout: basic
 {% include header.html %}
 	<div class="content">
 		{% include path.html %}
-		<h1 class="header">{{page.heading}}</h1>
-		<p class="description">{{page.description}}</p>
+		<h1 class="header">{{ page.heading }}</h1>
+		<p class="description">{{ page.description }}</p>
+		<p class="date">{{ page.date | date_to_long_string }}</p>
 
 
 		{{ content }}

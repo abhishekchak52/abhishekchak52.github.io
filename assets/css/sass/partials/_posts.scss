@@ -18,12 +18,20 @@ body {
 }
 
 
+
 .content{
 		p{
-		a{
-			text-decoration: underline;
-			color: black;
-		}}
+			
+			a{
+				text-decoration: underline;
+				color: black;
+			}
+		}
+
+		.date{
+				text-align: right;
+				width: 100%;
+			}
 		width: 80vw;
 		margin: auto;
 		color: black;
