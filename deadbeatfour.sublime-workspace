@@ -4,16 +4,36 @@
 		"selected_items":
 		[
 			[
+				"fotn",
+				"font-weight"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"jus",
+				"justify-content"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
 				"max",
 				"max-width"
 			],
 			[
 				"colu",
 				"column-count"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"cont",
@@ -56,24 +76,12 @@
 				"underline"
 			],
 			[
-				"tex",
-				"text-decoration"
-			],
-			[
 				"tran",
 				"transition"
 			],
 			[
 				"card",
 				"card_date"
-			],
-			[
-				"fotn",
-				"font-size"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"border",
@@ -179,6 +187,23 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "code/_posts/2017-06-07-lightweight-social-share.md",
+			"settings":
+			{
+				"buffer_size": 5873,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_includes/social.html",
+			"settings":
+			{
+				"buffer_size": 551,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -236,14 +261,38 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io"
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code/_posts",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts"
 	],
 	"file_history":
 	[
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts/2017-06-02-fourier_transforms.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/basic.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/post.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_posts.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/post_list.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/social.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_post_list.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/js/socialDialogs.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/gulpfile.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_config.yml",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/index.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_footer.scss",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/footer.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code/_posts/2017-06-01-dummy-code.md",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/header.html",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/js/loadScripts.js",
 		"/C/Users/abhis/Dropbox/Documents/Programming/photon/index.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/photon/assets/scss/main.scss",
 		"/C/Users/abhis/Dropbox/Documents/Programming/photon/gulpfile.js",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/gulpfile.js",
 		"/C/Users/abhis/Downloads/palette.scss",
 		"/C/Users/abhis/.jupyter/jupyter_notebook_config.py",
 		"/C/Users/abhis/Dropbox/Documents/Programming/photon/gulpfule.js",
@@ -253,30 +302,17 @@
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/text/_posts/the-circle.md",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/tldr.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/main.scss",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/footer.html",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_footer.scss",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_posts.scss",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/index.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/contact.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_home.scss",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_tldr.scss",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/post.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code/code.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/text/text.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_navbar.scss",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/header.html",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts/2017-06-02-fourier_transforms.md",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/basic.html",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/social.html",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_config.yml",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/disqus.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts/fourier_transforms/2017-06-02-fourier_transforms.md",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts/2017-06-01-dummy-physics.md",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/design/_posts/2017-06-01-dummy-design.md",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code/_posts/2017-06-01-dummy-code.md",
 		"/C/Users/abhis/AppData/Local/Temp/Rar$DIa0.580/README.txt",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/post_list.html",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_post_list.scss",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts/2017-06-01-dummy.md",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/js/scrollToTop.js",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/path.html",
@@ -398,8 +434,86 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "code/_posts/2017-06-07-lightweight-social-share.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5746,
+								5746
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 6875,
+								"count": 797,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"parser": "github",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"target": "browser"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_includes/social.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 8,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
