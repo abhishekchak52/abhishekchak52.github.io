@@ -2,6 +2,8 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="theme-color" content="black">
 	{% if page.og-image-url %}
 	<meta property="og:image:url" content="{{ site.staticfiles | prepend: site.url }}/img/posts/{{ page.category }}/{{ page.title }}/{{ page.og-image-url }}" />
 	<meta name="twitter:image" content="{{ site.staticfiles | prepend: site.url }}/img/posts/{{ page.category }}/{{ page.title }}/{{ page.og-image-url }}" />
