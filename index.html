@@ -4,7 +4,7 @@ layout: sections
 ---
 <div class="main">
 	<div class="image">
-				<img src="{{ site.baseurl }}{{ site.staticfiles }}/img/face.jpg" alt="Hello!" class="picture" />
+				<img src="{{ site.staticfiles | prepend: site.baseurl }}/img/face.jpg" alt="Hello!" class="picture" />
 	</div>
 	
 	<div class="bio">
