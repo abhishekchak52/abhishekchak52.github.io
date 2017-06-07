@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-	imagemin = require('gulp-imagemin')
+	imagemin = require('gulp-imagemin'),
 	sass = require('gulp-sass'),
 	cp = require('child_process'),
 	util = require('gulp-util'),
@@ -48,10 +48,7 @@ gulp.task('browser-sync', ['sass', 'js', 'images', 'jekyll-build'], function() {
 
 gulp.task('sass', function () {
     return gulp.src(paths.sass)
-        .pipe(sass({
-            // includePaths: ['scss'],
-            onError: browserSync.notify
-        }))
+        .pipe(sass().on('error', sass.logError))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(concat('main.css'))
         .pipe(cleancss())    
