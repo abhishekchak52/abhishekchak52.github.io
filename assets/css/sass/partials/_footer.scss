@@ -41,13 +41,16 @@
 .contact-options{
 	display: flex;
 	flex-direction: column;
-}
 
+}
+	
 .option{
+
 	color: white;
-	margin:2vw 0;
 	font-family: 'Roboto', sans-serif;
 	font-size:3vw;
+	margin-left: 2vw;
+
 
 }
 @media all and (min-width: $breakpoint-mobile){
@@ -56,7 +59,7 @@
 	display: flex;
 	height: 2vw;
 	flex-direction: row;
-	justify-content: space-between;	
+	justify-content: space-around;	
 	padding: 3vw 0 4vw 0;
 		
 	}
@@ -73,15 +76,14 @@
 	}
 	.option{
 		font-size: 1.2vw;
-		margin-top: 1vw;
-		margin-right: 2vw;
+		margin: 1vw;
 
 	}
 	.contact-options{
 		flex-direction: row;
-	}
-
-	.footer-contact{
-	
+		span {
+			display: flex;
+			align-items: center;
+		}
 	}
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	{% if page.og-image-url %}
-	<meta property="og:image:url" content="{{ site.url }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/{{ page.og-image-url }}" />
+	<meta property="og:image:url" content="{{ site.staticfiles | prepend: site.url }}/img/posts/{{ page.category }}/{{ page.title }}/{{ page.og-image-url }}" />
 	<meta property="og:title" content="{{ page.heading }}"/>	
 	<meta property="og:description" content="{{page.description}}" />
 	<meta property="og:article:author" content="{{ site.title }}" />
@@ -12,10 +12,11 @@
 	<!-- <meta name="twitter:site" content="@flickr" /> -->
 	<meta name="twitter:title" content="{{ page.heading }}" />
 	<meta name="twitter:description" content="{{page.description}}" />
-	<meta name="twitter:image" content="{{ site.url }}{{site.staticfiles }}/img/posts/{{ page.category }}/{{ page.title }}/{{ page.og-image-url }}" />
+	<meta name="twitter:image" content="{{ site.staticfiles | prepend: site.url }}/img/posts/{{ page.category }}/{{ page.title }}/{{ page.og-image-url }}" />
 
 	{% endif %}
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ site.staticfiles }}/css/main.css" />
+	<script src="https://use.fontawesome.com/8043282377.js"></script>
 
 	
 	
