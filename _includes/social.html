@@ -1,18 +1,16 @@
 <div class="social">
-	<span>
-		<a class="share"
-		id="facebook"
-		href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}">
-		Share
-		</a>
-	</span>
-	<span>
-		<a
-		class="share"
-		id="twitter"
-		href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.url | url_encode }}
-		&text={{ page.heading | url_encode }}">
-		Tweet
-		</a>
-	</span>
+		<span><i class="fa fa-facebook fa-lg" aria-hidden="true"></i><a class="share"
+			id="facebook"
+			href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}">
+			Share this on Facebook
+			</a></span>
+	<span>or</span>
+		<span><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+			<a
+			class="share"
+			id="twitter"
+			href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.url | url_encode }}
+			&text={{ page.heading | url_encode }}">
+			Tweet this article.
+			</a></span>
 </div>

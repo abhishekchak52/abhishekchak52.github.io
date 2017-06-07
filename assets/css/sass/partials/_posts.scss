@@ -1,21 +1,29 @@
 
 
-
 a{
 	text-decoration: none;
 	color: black;
 }
 
+
 body {
-	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
 	min-height: 100vh;
 
 }
 
+.description{
+	font-style: italic;
+}
+
 
 .content{
+		p{
+		a{
+			text-decoration: underline;
+			color: black;
+		}}
 		width: 80vw;
 		margin: auto;
 		color: black;
@@ -25,7 +33,7 @@ body {
 		.header{
 			font-family: 'Montserrat', sans-serif;
 			font-size: 7vw;
-			line-height: 10.5vw;
+			line-height: 10vw;
 			display: block;
 			text-align: left;
 		}
@@ -70,15 +78,30 @@ body {
 		}
 		font-family: 'Rubik', sans-serif;
 		font-weight: 300;
+		border-radius: 5px;
 
 		.social{
-			display:flex;
-			flex-direction: row;
-			span{
-				margin-right: 1vw;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			width: 100%;
+			border-radius: 5px;
+			background-color: #DDF;
+			padding: 2vw;
+			i{
+					margin-right: 0vw;
 			}
 		}
 	}
+
+blockquote{
+	font-style: italic;
+	border-left: 5px solid #BBD;
+	background-color: #EEE;
+	padding: 5px 20px;
+	width: auto;
+	text-align: justify;
+}
 
 
 
@@ -98,6 +121,7 @@ body {
 		width: 70vw;
 		margin: auto;
 		flex: 1 0 auto;
+
 
 		.header{
 			font-size: 4vw;
@@ -121,12 +145,18 @@ body {
 			}
 		}
 		.description{
-			font-size: 1.8vw;
+			font-size: 1.4vw;
 			line-height: 2.7vw;
 		}
 		h2{
 			font-size: 2.5vw;
 		}
-		
+		.social{
+			flex-direction: row;
+			justify-content: center;
+			span{
+				margin: 0 1vw;
+			}
+		}
 	}
 }
