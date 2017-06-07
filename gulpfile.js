@@ -71,17 +71,17 @@ gulp.task('images',function(){
 
 gulp.task('js',function(){
 	gulp.src('assets/js/*.js')
-	.pipe(gulp.dest('_site/static/js'))
-	.pipe(browserSync.reload({stream: true}))
     .pipe(concat('main.js'))
     .pipe(uglify())
+	.pipe(gulp.dest('_site/static/js'))
+	.pipe(browserSync.reload({stream: true}))
 	.pipe(gulp.dest('static/js'));
 });
 
 gulp.task('watch', function () {
     gulp.watch('assets/css/sass/**/*.scss', ['sass']);
     gulp.watch('assets/js/*.js', ['js']);
-    gulp.watch(['*.html', '_layouts/*', '_posts/**/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', 'physics/**/*', 'code/**/*', 'design/**/*', 'text/**/*' ], ['jekyll-rebuild']);
 });
 
 
