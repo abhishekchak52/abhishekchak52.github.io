@@ -52,30 +52,26 @@ gulp.task('sass', function () {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(concat('main.css'))
         .pipe(cleancss())    
-        .pipe(gulp.dest('_site/static/css'))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest(paths.css));
+        .pipe(gulp.dest(paths.css))
+        .pipe(gulp.dest('_site/static/css'));
 });
 
 gulp.task('images',function(){
 	return gulp.src(paths.imgIn)
 		.pipe(imagemin())
-		.pipe(gulp.dest('_site/static/img'))
 		.pipe(browserSync.reload({stream: true}))
-		.pipe(gulp.dest(paths.imgOut));
+		.pipe(gulp.dest(paths.imgOut))
+        .pipe(gulp.dest('_site/static/img'));
 });
-
-
-
-
 
 gulp.task('js',function(){
 	gulp.src('assets/js/*.js')
     .pipe(concat('main.js'))
     .pipe(uglify())
-	.pipe(gulp.dest('_site/static/js'))
 	.pipe(browserSync.reload({stream: true}))
-	.pipe(gulp.dest('static/js'));
+	.pipe(gulp.dest('static/js'))
+    .pipe(gulp.dest('_site/static/js'));
 });
 
 gulp.task('watch', function () {

@@ -188,19 +188,38 @@
 	"buffers":
 	[
 		{
-			"file": "code/_posts/2017-06-07-lightweight-social-share.md",
+			"file": "assets/css/sass/partials/_posts.scss",
 			"settings":
 			{
-				"buffer_size": 5873,
+				"buffer_size": 2152,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_includes/social.html",
+			"file": "assets/js/socialDialogs.js",
 			"settings":
 			{
-				"buffer_size": 551,
+				"buffer_size": 161,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_layouts/post.html",
+			"settings":
+			{
+				"buffer_size": 349,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/css/sass/partials/_footer.scss",
+			"settings":
+			{
+				"buffer_size": 1230,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -262,18 +281,15 @@
 	"expanded_folders":
 	[
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/js",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code/_posts",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts"
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/js"
 	],
 	"file_history":
 	[
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/gulpfile.js",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/.gitignore",
+		"/C/Users/abhis/Downloads/CHERA_2017_announcement.txt",
+		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/code/_posts/2017-06-07-lightweight-social-share.md",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/physics/_posts/2017-06-02-fourier_transforms.md",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/basic.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/post.html",
@@ -282,7 +298,6 @@
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_includes/social.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_post_list.scss",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/js/socialDialogs.js",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/gulpfile.js",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_config.yml",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/index.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_footer.scss",
@@ -333,7 +348,6 @@
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/about.html",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/assets/css/sass/partials/_path.scss",
 		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/_layouts/home.html",
-		"/C/Users/abhis/Dropbox/Documents/Programming/website/deadbeatfour.github.io/.gitignore",
 		"/C/Users/abhis/Desktop/swe_wavepacket/swe_wavepacket.md",
 		"/C/Users/abhis/AppData/Roaming/Sublime Text 3/Packages/User/MarkdownPreview.sublime-settings",
 		"/C/Users/abhis/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
@@ -439,38 +453,37 @@
 			[
 				{
 					"buffer": 0,
-					"file": "code/_posts/2017-06-07-lightweight-social-share.md",
+					"file": "assets/css/sass/partials/_posts.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5873,
+						"buffer_size": 2152,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5746,
-								5746
+								245,
+								245
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 6875,
-								"count": 797,
+								"changes": 206,
+								"count": 241,
 								"modified": false,
 								"selection": false,
 								"status": -1,
 								"syntax": "plain text"
 							},
-							"parser": "github",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"target": "browser"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1540.0,
+						"translation.y": 2025.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -478,19 +491,92 @@
 				},
 				{
 					"buffer": 1,
-					"file": "_includes/social.html",
-					"semi_transient": true,
+					"file": "assets/js/socialDialogs.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 551,
+						"buffer_size": 161,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "javascript"
+							},
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_layouts/post.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								172
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 5,
+								"count": 8,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/css/sass/partials/_footer.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
 							]
 						],
 						"settings":
@@ -498,20 +584,20 @@
 							"WordCount":
 							{
 								"changes": 0,
-								"count": 8,
+								"count": 148,
 								"modified": false,
 								"selection": false,
 								"status": -1,
 								"syntax": "plain text"
 							},
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 105.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
