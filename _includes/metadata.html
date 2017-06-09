@@ -1,0 +1,32 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="black">
+{% if page.og-image-url %}
+<meta property="og:image:url" content="{{ site.staticfiles | prepend: site.url }}/img/posts/{{ page.category }}/{{ page.title }}/{{ page.og-image-url }}" />
+<meta name="twitter:image" content="{{ site.staticfiles | prepend: site.url }}/img/posts/{{ page.category }}/{{ page.title }}/{{ page.og-image-url }}" />
+{% endif %}
+{% if page.heading %}
+<meta property="og:title" content="{{ page.heading }}"/>	
+<meta property="og:description" content="{{page.description}}" />
+<meta property="og:article:author" content="{{ site.title }}" />
+<meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+<meta name="twitter:card" content="summary" />
+<!-- <meta name="twitter:site" content="@flickr" /> -->
+<meta name="twitter:title" content="{{ page.heading }}" />
+<meta name="twitter:description" content="{{page.description}}" />
+{% endif %}
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ site.staticfiles }}/css/main.css" />
+<script src="https://use.fontawesome.com/8043282377.js"></script>
+<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous">
+</script>
+<script src="{{ site.baseurl }}{{ site.staticfiles }}/js/main.js" type="text/javascript" charset="utf-8" async defer>
+</script>
+<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=default">
+</script>
