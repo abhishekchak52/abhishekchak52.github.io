@@ -4,6 +4,7 @@ title: acquaintance-at-a-shop
 category: text
 heading: My Acquaintance at a Shop
 description: My experiences with growing up
+
 og-image-url: "the_shop.jpg"
 
 
