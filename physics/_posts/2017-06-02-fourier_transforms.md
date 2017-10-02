@@ -4,8 +4,6 @@ title: fourier-transforms
 category: physics
 heading: Implementing Fourier Transforms
 description: A look at how to implement Fourier Transforms on a computer.
-comments: true
-
 og-image-url: "output_7_1.png"
 
 
