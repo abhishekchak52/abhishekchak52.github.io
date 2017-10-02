@@ -144,3 +144,4 @@ From the analysis of exponential curves, we know that the doubling time for the 
 
     Doubling time is 46.7 minutes
     
+So this batch of *E. coli* doubles roughly every 47 minutes. The reason we can conclude on the doubling time from analysing area is because we can consider doubling of area to signify doubling of bacterial cells. 
