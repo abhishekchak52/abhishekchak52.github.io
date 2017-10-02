@@ -3,8 +3,7 @@ layout: post
 title: ecoli-timing
 category: physics
 heading: Analysing E-coli division
-description: A  computational exploration in biological physics.
-
+description: A computational exploration in biological physics.
 og-image-url: "output_8_0.png"
 
 
