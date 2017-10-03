@@ -30,18 +30,20 @@ import scipy.linalg as la
 First we generate a signal. For discrete fourier transforms,the signal is sampled at a finite number of points after regular intervals, which we attribute to the response time of the measuring apparatus. The number of samples is a power of 2 for reasons that will be clear later when we discuss the Fast Fourier Transform.
 
 
-<!-- {% highlight python %} -->
-```ruby
+{% highlight python %}
+
 def signal(t):
     return 1-(t-2)**2 if (t<3 and t>1) else 0
-```
-<!-- {% endhighlight %} -->
+
+{% endhighlight %}
 
 {% highlight python %}
+
 num_samples = rows = cols = 2**12
 time_list  = linspace(0.0001,4,num_samples)
 signal_list = [signal(time) for time in time_list]
 plot(time_list,signal_list)
+
 {% endhighlight %}
 
 ![png]({{site.staticfiles | prepend: site.baseurl }}/img/posts/{{ page.category }}/{{ page.title }}/output_7_1.png)
@@ -50,12 +52,14 @@ plot(time_list,signal_list)
 Now we create the function that will perform the discrete fourier transform.
 
 {% highlight python %}
+
 def DFT(x,inverse=False):
     x = asarray(x,dtype=float)
     n = arange(num_samples)
     k = n.reshape((num_samples,1))        
     mat = exp(2j * pi * k *n/num_samples)
     return dot(la.inv(mat),x) if inverse else dot(mat,x)
+
 {% endhighlight %}
 
 A look into the mathematical treatment of the DFT should convince you that this is the way to go.
