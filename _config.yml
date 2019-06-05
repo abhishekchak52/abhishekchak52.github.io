@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Abhishek Chakraborty
-email: deadbeatfour@gmail.com
+email: abhishekchak52@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A physics major who loves making things with 
   computers and code.
