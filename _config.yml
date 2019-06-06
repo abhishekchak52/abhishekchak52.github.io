@@ -38,4 +38,8 @@ exclude: ["assets",
           "Gemfile",
           "Gemfile.lock",
           "gulpfile.js",
-          "node_modules"]
+          "node_modules",
+	  "package.json",
+	  "package-lock.json",
+	  "LICENSE",
+	  "README.md"]
