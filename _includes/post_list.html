@@ -1,12 +1,9 @@
 <div class="post_list">
 	{% for post in site.categories.[page.category] %}
-		
 			<div class="post_card">
 				<span class='post_info'>
-					<span class="card_title"><a href="{{post.url}}">{{ post.heading }}</a></span>
+					<span class="card_title"><a href="{{post.url}}">{{ post.heading }}</a><span class="card_date">{{ post.date | date_to_long_string }}</span></span>
 					<span class="card_desc">{{ post.description }}</span>
 				</span>
-				<span class="card_date">{{ post.date | date_to_long_string }}</span>
-			</div>
-		
+			</div>	
 	{% endfor %}</div>

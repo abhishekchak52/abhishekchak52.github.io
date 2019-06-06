@@ -6,17 +6,14 @@ layout: basic
 {% include header.html %}
 	<div class="content">
 		{% include path.html %}
-		<h1 class="header">{{ page.heading }}</h1>
-		<p class="post-description">{{ page.description }}</p>
-		<p class="date">{{ page.date | date_to_long_string }}</p>
-
-
-		{{ content }}
-
-		{% include social.html %}		
-
+		<div class="header">
+			<h1 class="post-title">{{ page.heading }}</h1>
+			<p class="post-description">{{ page.description }}</p>
+			<p class="date">{{ page.date | date_to_long_string }}</p>
 		</div>
-
+		{{ content }}
+		{% include social.html %}		
+		</div>
 {% include footer.html %}
 
 
