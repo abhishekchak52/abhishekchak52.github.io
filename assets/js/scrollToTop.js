@@ -4,3 +4,4 @@ $('.top').on('click',function(){
 		scrollTop: 0
 	});
 });
+
