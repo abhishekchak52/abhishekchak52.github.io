@@ -3,15 +3,18 @@ const { exec } = require('child_process');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
+const uglify = require('gulp-uglify');
 
 
 sass.compiler = require('node-sass');
 
 var paths = {
+	jsIn: 'assets/js/*.js',
 	sass: './assets/css/sass/**/*.scss',
 	imgIn: './assets/img/**/*',
 	css: '_site/static/css/',
 	imgOut: '_site/static/img/',
+	jsOut: '_site/static/js/',
 	siteRoot: "_site"
 }
 
@@ -30,6 +33,13 @@ function build_sass() {
 
 }
 
+function build_js(){
+	return src(paths.jsIn)
+		.pipe(concat('main.js'))
+		.pipe(uglify())
+		.pipe(dest(paths.jsOut));
+}
+
 function clean(cb) {
   // body omitted
   cb();
@@ -43,9 +53,8 @@ function build() {
 
 
 exports.build = build;
+exports.build_js = build_js;
 exports.build_sass = build_sass;
-exports.default = function() {
-	watch(paths.siteRoot, build);// series(clean, build));
-};
+exports.default =  series(build, parallel(build_sass,build_js));
 
 // gulp.task('default', ['browser-sync','watch']);
