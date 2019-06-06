@@ -113,7 +113,7 @@ blockquote{
 
 
 
-@media all and (min-width: 800px){
+@media all and (min-width: $breakpoint-mobile){
 	html,
 	body{
 		min-height: 100vh;
