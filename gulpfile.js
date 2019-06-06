@@ -5,15 +5,14 @@ const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
-const browserSync = require('browser-sync').create();
-
+const server = require('browser-sync').create();
 
 sass.compiler = require('node-sass');
 
 var paths = {
 	js: {
 		src: 'assets/js/*.js',
-		dest: './static/js/'
+		dest: './static/js/',
 	},
 	img: {
 		src: './assets/img/**/*',
@@ -23,14 +22,13 @@ var paths = {
 		src: './assets/css/sass/**/*.scss',
 		dest: './static/css/'
 	},
-	siteRoot: "_site"
+	site:{
+		root: "_site",
+		js: "./_site/static/js/",
+		img: "./_site/static/img/",
+		css: "_site/static/css/"
+	}
 }
-
-var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
-var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
-
 
 function build_sass() {
 	return src(paths.css.src)
@@ -38,7 +36,8 @@ function build_sass() {
 		.pipe(concat('main.css'))
 		.pipe(cleanCSS())
 		.pipe(dest(paths.css.dest))
-		.pipe(browserSync.stream());
+		.pipe(dest(paths.site.css))
+		.pipe(server.stream());
 }
 
 function build_js(){
@@ -46,43 +45,36 @@ function build_js(){
 		.pipe(concat('main.js'))
 		.pipe(uglify())
 		.pipe(dest(paths.js.dest))
-		.pipe(browserSync.stream());
+		.pipe(dest(paths.site.js))
+		.pipe(server.stream());
 }
 
 function build_img() {
 	return src(paths.img.src)
 		.pipe(imagemin())
 		.pipe(dest(paths.img.dest))
-		.pipe(browserSync.stream());
+		.pipe(dest(paths.site.img))
+		.pipe(server.stream());
 }
 
 function serve(){
-	browserSync.init({
-    	files: paths.siteRoot + '/**',
+	server.init({
+    	files: paths.site.root + '/**',
     	port: 4000,
+    	notify: false,
         server: {
-            baseDir: '_site'
+            baseDir: paths.site.root
         }
     });
-    watch(paths.css.src, build_sass);
-    watch(paths.js.src, build_js);
-    watch(paths.img.src, build_img);
-}
-
-function clean(cb) {
-  // body omitted
-  cb();
+	watch(paths.css.src, build_sass);
+	watch(paths.js.src, series(build_js));
+	watch(paths.img.src, series(build_img));
 }
 
 function build() {
-  // body omitted
   return exec('bundler exec jekyll build --incremental');
 }
 
-
-
-exports.build = build;
 exports.serve = serve;
-exports.default =  series(parallel(build_sass,build_js, build_img), build);
-
-// gulp.task('default', ['browser-sync','watch']);
+exports.build = series(parallel(build_sass,build_js, build_img), build);
+exports.default = serve
