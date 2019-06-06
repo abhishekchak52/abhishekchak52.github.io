@@ -60,26 +60,27 @@ body {
 				height: auto;
 			}
 		}
-
-		pre{
-			padding: 1vw;
-			background: lightgray;
-			font-size: 1rem;
-			overflow: auto;
-			white-space: pre;
-			border-radius: 5px;
-
-
-		
-			code{
-				// padding: 1vw;
+		.highlight{
+			margin: 0 auto;
+			pre{
+				padding: 1vw;
 				background: lightgray;
 				font-size: 1rem;
 				overflow: auto;
 				white-space: pre;
+				border-radius: 5px;
+
+
+			
+				code{
+					// padding: 1vw;
+					background: lightgray;
+					font-size: 1rem;
+					overflow: auto;
+					white-space: pre;
+				}
 			}
 		}
-
 		h2,
 		h3{
 			font-weight: 500;
