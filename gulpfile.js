@@ -4,6 +4,7 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
 
 
 sass.compiler = require('node-sass');
@@ -12,9 +13,9 @@ var paths = {
 	jsIn: 'assets/js/*.js',
 	sass: './assets/css/sass/**/*.scss',
 	imgIn: './assets/img/**/*',
-	css: '_site/static/css/',
-	imgOut: '_site/static/img/',
-	jsOut: '_site/static/js/',
+	css: './static/css/',
+	imgOut: './static/img/',
+	jsOut: './static/js/',
 	siteRoot: "_site"
 }
 
@@ -40,6 +41,11 @@ function build_js(){
 		.pipe(dest(paths.jsOut));
 }
 
+function build_img() {
+	return src(paths.imgIn)
+		.pipe(imagemin())
+		.pipe(dest(paths.imgOut));
+}
 function clean(cb) {
   // body omitted
   cb();
@@ -53,8 +59,6 @@ function build() {
 
 
 exports.build = build;
-exports.build_js = build_js;
-exports.build_sass = build_sass;
-exports.default =  series(build, parallel(build_sass,build_js));
+exports.default =  series(parallel(build_sass,build_js, build_img), build);
 
 // gulp.task('default', ['browser-sync','watch']);
