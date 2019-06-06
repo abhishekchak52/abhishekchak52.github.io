@@ -1,66 +1,38 @@
 .post_list{
 	display: flex;
 	flex-direction: column
-
-
 }
 
 .post_card{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	padding: 4vw 0;
+	margin: 0.5vw auto;
 	width: 100%;
-	margin: 1vw auto;
 
 	.post_info{
+		font-size: 0.1rem;
 		display: flex;
 		flex-direction: column;
 	}
-
-
 }
 .card_title{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 6vw;
+	font-size:1.5rem;
 
 }
 .card_desc{
 	text-align: left;
 	font-family: 'Rubik', sans-serif;
-	font-size: 4vw;
-	margin: 1vw auto;
-	width: 100%;
+	font-size: 1rem;
 	font-style: italic;
+	margin: 0.2rem auto;
+	width: 100%;
 
 }
 .card_date{
-			text-align: right;
-}
-
-@media all and (min-width: $breakpoint-mobile){
-	.post_list{
-		
-
-	}
-
-	.post_card{
-		padding: 1vw 0;
-		margin: 0.5vw auto;
-
-	}
-	.card_title{
-		font-size:2vw;
-
-	}
-	.card_desc{
-		font-size: 1.2vw;
-		font-style: italic;
-		
-	}
-	.card_date{
-		font-size: 1.5vw;
-
-
-	}
+	font-size: 1rem;
+	text-align: right;
 }
