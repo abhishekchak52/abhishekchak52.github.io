@@ -31,8 +31,7 @@ kramdown:
   hard_wrap: true
 highlighter: rouge
 
-
-gems:
+plugins:
   - jekyll-feed
 
 exclude: ["assets",
