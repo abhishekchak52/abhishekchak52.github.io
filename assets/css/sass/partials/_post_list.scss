@@ -17,11 +17,20 @@
 }
 .card_title{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
-	font-family: 'Montserrat', sans-serif;
-	font-size:1.5rem;
 
+
+	a{
+		font-family: 'Montserrat', sans-serif;
+		font-size:1.5rem;
+	}
+
+	.card_date{
+		order:1;
+		font-size: 1rem;
+		text-align: left;
+	}
 }
 .card_desc{
 	text-align: left;
@@ -32,7 +41,13 @@
 	width: 100%;
 
 }
-.card_date{
-	font-size: 1rem;
-	text-align: right;
+
+
+@media all and (min-width: $breakpoint-mobile){
+	.card_title{
+		flex-direction: row;
+		.card_date{
+			text-align: right;
+		}
+	}
 }
