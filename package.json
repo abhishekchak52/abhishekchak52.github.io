@@ -1,0 +1,34 @@
+{
+  "name": "deadbeatfour.github.io",
+  "version": "1.0.0",
+  "description": "A website for moi",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadbeatfour/deadbeatfour.github.io.git"
+  },
+  "keywords": [
+    "gulp",
+    "jekyll"
+  ],
+  "author": "Abhishek Chakraborty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deadbeatfour/deadbeatfour.github.io/issues"
+  },
+  "homepage": "https://github.com/deadbeatfour/deadbeatfour.github.io#readme"
+}
