@@ -1,13 +1,11 @@
 .path{
 	font-family: 'Rubik', sans-serif;
-	font-size: 5vw;
-	margin: 1vw auto 2vw auto;
+	font-size: 1.5rem;
+	margin: 1rem auto;
 }
 
 @media all and (min-width: $breakpoint-mobile){
-.path{
-	font-family: 'Rubik', sans-serif;
-	font-size: 2vw;
-	margin: 1vw auto 1vw auto;
-}
+	.path{
+		font-size: 2rem;
+	}
 }
