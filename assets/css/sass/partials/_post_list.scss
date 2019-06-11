@@ -1,53 +1,52 @@
 .post_list{
 	display: flex;
-	flex-direction: column
-}
-
-.post_card{
-	display: flex;
 	flex-direction: column;
-	margin: 0.5vw auto;
-	width: 100%;
-
-	.post_info{
-		font-size: 0.1rem;
+	.post_card{
 		display: flex;
 		flex-direction: column;
+		margin: 0.5vw auto;
+		width: 100%;
+		.post_info{
+			font-size: 0.1rem;
+			display: flex;
+			flex-direction: column;
+			.card_title{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				a{
+					font-family: 'Montserrat', sans-serif;
+					font-size:1.5rem;
+				}
+				.card_date{
+					order:1;
+					font-size: 1rem;
+					text-align: left;
+				}
+			}
+			.card_desc{
+				text-align: left;
+				font-family: 'Rubik', sans-serif;
+				font-size: 1rem;
+				font-style: italic;
+				margin: 0.2rem auto;
+				width: 100%;
+			}
+		}
 	}
 }
-.card_title{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-
-	a{
-		font-family: 'Montserrat', sans-serif;
-		font-size:1.5rem;
-	}
-
-	.card_date{
-		order:1;
-		font-size: 1rem;
-		text-align: left;
-	}
-}
-.card_desc{
-	text-align: left;
-	font-family: 'Rubik', sans-serif;
-	font-size: 1rem;
-	font-style: italic;
-	margin: 0.2rem auto;
-	width: 100%;
-
-}
-
 
 @media all and (min-width: $breakpoint-mobile){
-	.card_title{
-		flex-direction: row;
-		.card_date{
-			text-align: right;
+	.post_list{
+		.post_card{
+			.post_info{
+				.card_title{
+					flex-direction: row;
+					.card_date{
+						text-align: right;
+					}
+				}
+			}
 		}
 	}
 }
