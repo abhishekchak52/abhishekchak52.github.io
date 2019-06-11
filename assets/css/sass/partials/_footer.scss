@@ -33,6 +33,11 @@
 		.contact-options{
 			width: 60rem;
 			justify-content: center;
+			span{
+				.option{
+					margin: 0 3rem;
+				}
+			}
 		}
 	}
 }
