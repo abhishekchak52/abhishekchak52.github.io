@@ -1,6 +1,6 @@
 <div class="path">
 	<span>
-		<a href="/{{ page.category }}">
+		<a href="/{% unless page.category == 'about' %}{{ page.category }}{% endunless %}">
 		./{{page.category}}</a>{% if page.title %}/{{ page.title }}{% endif %}
 	</span>
 </div>
