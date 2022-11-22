@@ -4,7 +4,7 @@
   "description": "A website for moi",
   "main": "gulpfile.js",
   "dependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
